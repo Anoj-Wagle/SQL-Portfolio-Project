@@ -1,2 +1,2 @@
 # SQL-Portfolio-Project
-This repository contains the projects that is prepared by using SQL and PowerBI.
+**These projects showcase my proficiency in SQL for data analysis, manipulation, and reporting across various datasets.**
