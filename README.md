@@ -4,7 +4,8 @@
 ## 1. Customer Revenue Insights:
 
 # Project Overview:
-This project contails the sales dataset from year 2015 to 2017. This project demonstrates the sales revenue from each year. Moreover, it provides the insights on total customers, churn data and customer segmentation. The main aim of this data is show above details in powerful and interactive dashboard.
+This project analyzes a comprehensive sales dataset spanning from 2015 to 2017. It highlights annual sales revenue, customer trends, churn analysis, and segmentation insights. The primary objective is to present these key metrics through a dynamic and interactive dashboard, enabling data-driven decision-making.
+
 # Tools and Technologies Used
 * **SQL** – Data extraction, cleaning, and transformation.
 * **Power BI** – Interactive dashboard design, visualization, and reporting.
