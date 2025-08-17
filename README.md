@@ -11,3 +11,4 @@ This project analyzes a comprehensive sales dataset spanning from 2015 to 2017. 
 * **Power BI** – Interactive dashboard design, visualization, and reporting.
 * **DAX (Data Analysis Expressions)** – Creating custom metrics and calculations.
 * **Power Query** – Data shaping and ETL (Extract, Transform, Load) processes.
+## A. 
