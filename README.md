@@ -101,7 +101,23 @@ customer_segments
 select customer_segment,sum(netrevenue) as  netrevenue
 from segment_summary
 group by customer_segment
-``` 
+```
+# 5. Churn Analysis
+-- Customer retention - who are not purchasing recently - churn rate
+-- Active Customer - Customer who made a purchase within the last 6 month
+-- Churned Customer - Customer who has n't made a purchase in over 6 months.
+```sql
+with getlastpurchase as (
+select 
+ROW_NUMBER() over (partition by customerkey order by orderdate desc) as rn,
+*
+from revenueperclient
+)
+select *,case when orderdate<dateadd(month,-6,(select max(orderdate) from revenueperclient)) then 'Churn'
+        else 'Active' end as customer_status
+		into churndata
+from getlastpurchase where rn= 1
+```
 
 
 # Power BI Dashboard Overview
