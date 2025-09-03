@@ -11,7 +11,98 @@ This project analyzes a comprehensive sales dataset spanning from 2015 to 2017. 
 * **Power BI** – Interactive dashboard design, visualization, and reporting.
 * **DAX (Data Analysis Expressions)** – Creating custom metrics and calculations.
 * **Power Query** – Data shaping and ETL (Extract, Transform, Load) processes.
+* 
 ## Dataset Overview
+The dataset includes following details.
+- Product Sales in 2015
+- Product Sales in 2016
+- Product Sales in 2017
+
+## Queries
+# 1. Merge product table
+Using `Union` function merged the product sales of all three years.
+```sql
+select * from Product_Sales_2015
+select * into sales
+from product_sales_2015
+union 
+select * from product_sales_2016
+union 
+select * from product_sales_2017
+```
+# 2. Revenue Per Client
+A `revenue_per_client` view was created
+```sql
+create view revenueperclient as 
+select distinct 
+sum((CAST(s.OrderQuantity AS DECIMAL(10,2)) * CAST(P.ProductPrice AS DECIMAL(10,2)) - 
+     CAST(s.OrderQuantity AS DECIMAL(10,2)) * CAST(P.ProductCost AS DECIMAL(10,2)))) AS 'NetRevenue', 
+p.ModelName,
+p.Productname,
+s.CustomerKey,
+s.OrderDate
+from sales as s
+left join products as p 
+on s.productkey = p.productkey
+group by p.ModelName,
+p.Productname,
+s.CustomerKey,
+s.OrderDate;
+```
+# 3. Cohort Analysis
+This analysis provides an insight to the total people retention each year from 2015 to 2017.
+```sql
+create view yearly_cohort_customer as 
+with yearly_cohort as (
+select 
+distinct 
+CustomerKey,
+year(min(orderdate) over(partition by customerkey)) as cohort_year
+from 
+sales
+)
+select 
+y.cohort_year,
+year(s.OrderDate) as Purchase_year,
+count(distinct s.customerkey) as UniqueCustomer
+from revenueperclient as s
+left join yearly_cohort as y
+on s.CustomerKey = y.CustomerKey
+group by y.cohort_year,year(s.OrderDate)
+```
+# 4. Customer Segmentation
+This provides insights on the customer value from low, median to high values.
+```sql
+alter view customer_segmentation as 
+with revenue as 
+(
+select 
+Modelname,
+customerkey,
+sum(netrevenue) as netrevenue
+from revenueperclient
+group by Modelname,customerkey
+), customer_segments as (
+select 
+PERCENTILE_CONT(0.25) within group (order by netrevenue) over(partition by Modelname) as '25_percetile',
+PERCENTILE_CONT(0.75) within group  (order by netrevenue) over(partition by Modelname) as '75_percetile',
+*
+from 
+revenue 
+), segment_summary as (
+select 
+case when netrevenue < [25_percetile] then '1 - Low Value Client'
+when netrevenue <= [75_percetile] then '1 - Mid Value Client'
+else '3- High-value' end as customer_segment,
+*
+from 
+customer_segments
+)
+select customer_segment,sum(netrevenue) as  netrevenue
+from segment_summary
+group by customer_segment
+``` 
+
 
 # Power BI Dashboard Overview
 This dashboard simplifies the results of a SQL analysis of sales dataset from 2015 to 2017. It automatically converts the complex SQL queries into easy-to-understand charts and diagrams for a quick visual summary.
