@@ -11,7 +11,13 @@ This project analyzes a comprehensive sales dataset spanning from 2015 to 2017. 
 * **Power BI** – Interactive dashboard design, visualization, and reporting.
 * **DAX (Data Analysis Expressions)** – Creating custom metrics and calculations.
 * **Power Query** – Data shaping and ETL (Extract, Transform, Load) processes.
-## A. 
+## Dataset Overview
+
+# Power BI Dashboard Overview
+This dashboard simplifies the results of a SQL analysis of sales dataset from 2015 to 2017. It automatically converts the complex SQL queries into easy-to-understand charts and diagrams for a quick visual summary.
+
+![1755064585095](https://github.com/user-attachments/assets/a5b88b84-fc54-49ef-804d-f196faea65a0)
+
 ## 2. Australian Current and Projected Housing Needs 2022 by Local Government Area
 
 # Project Overview:
