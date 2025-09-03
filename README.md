@@ -103,9 +103,7 @@ from segment_summary
 group by customer_segment
 ```
 # 5. Churn Analysis
--- Customer retention - who are not purchasing recently - churn rate
--- Active Customer - Customer who made a purchase within the last 6 month
--- Churned Customer - Customer who has n't made a purchase in over 6 months.
+Customer retention is all about keeping customers. The **churn rate** measures how many customers you lose. An **Active Customer** has purchased in the last six months, while a **Churned Customer** hasn't.
 ```sql
 with getlastpurchase as (
 select 
