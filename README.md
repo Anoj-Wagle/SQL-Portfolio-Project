@@ -116,12 +116,13 @@ select *,case when orderdate<dateadd(month,-6,(select max(orderdate) from revenu
 		into churndata
 from getlastpurchase where rn= 1
 ```
-
-
 # Power BI Dashboard Overview
 This dashboard simplifies the results of a SQL analysis of sales dataset from 2015 to 2017. It automatically converts the complex SQL queries into easy-to-understand charts and diagrams for a quick visual summary.
 
 ![1755064585095](https://github.com/user-attachments/assets/a5b88b84-fc54-49ef-804d-f196faea65a0)
+
+# Dashboard Overview
+
 
 ## 2. Australian Current and Projected Housing Needs 2022 by Local Government Area
 
