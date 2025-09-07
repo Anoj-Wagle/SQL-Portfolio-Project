@@ -141,6 +141,12 @@ This donut chart shows the distribution of customers based on their activity wit
 
 # 5. The second KPI provides insights on total customers (14K).
 
+# Business Insights
+## 1. Providing insights into customer retention and highlighting the revenue impact every year.
+## 2. The business can analyze the number of active customers in the past six months and identify the types of customers who remain active.
+## 3. Categorize customers based on their spending patterns, classifying them into high, medium, and low revenue segments, which also reflects their level of activity.
+
+
 # 2. Australian Current and Projected Housing Needs 2022 by Local Government Area
 
 # Project Overview:
@@ -248,6 +254,7 @@ These provide insights about the total number of local government area and state
 
 # Power BI Dashboard Overview
 This dashboard simplifies the results of a SQL analysis of Australian Current and Projected Housing Need. It automatically converts the complex SQL queries into easy-to-understand charts and diagrams for a quick visual summary.
+
 <img width="1348" height="929" alt="image" src="https://github.com/user-attachments/assets/cbc704cb-e3e7-474b-b1b7-ef9dc8d5aa41" />
 
 # Key Dashboard Features
