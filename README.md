@@ -278,7 +278,7 @@ This horizontal bar chart is designed to clearly rank the top 10 LGAs by the num
 # You can download project here : [Download Now](https://github.com/Anoj-Wagle/SQL-Portfolio-Project/tree/main/Housing%20Demand%20by%20LGA)
 
 ## Contribution
-Your input is valuable! Please fork, suggest improvements, or share ideas for future Excel tools. We're committed to delivering more impactful Excel-based solutions, so expect exciting updates soon! 🚀
+Your input is valuable! Please fork, suggest improvements, or share ideas for future SQL and Power BI tools. We're committed to delivering more impactful Excel-based solutions, so expect exciting updates soon! 🚀
 
 **✨ Stay tuned as I continue to roll out more valuable Excel-based solutions!**
 
