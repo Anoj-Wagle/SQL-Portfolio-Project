@@ -116,13 +116,30 @@ select *,case when orderdate<dateadd(month,-6,(select max(orderdate) from revenu
 		into churndata
 from getlastpurchase where rn= 1
 ```
-# Power BI Dashboard Overview
+# Power BI Dashboard
 This dashboard simplifies the results of a SQL analysis of sales dataset from 2015 to 2017. It automatically converts the complex SQL queries into easy-to-understand charts and diagrams for a quick visual summary.
 
 ![1755064585095](https://github.com/user-attachments/assets/a5b88b84-fc54-49ef-804d-f196faea65a0)
 
 # Dashboard Overview
+# 1. Cohort Analysis Impact on Net Revenue
+This analysis highlights the net revenue generated from customers, focusing on their repeat activity. It compares the revenue contributed by these returning customers in 2016 and 2017 against the baseline year of 2015.
 
+<img width="1375" height="802" alt="image" src="https://github.com/user-attachments/assets/441f5fcf-304b-4595-8934-0bf98795ec8a" />
+
+# 2. Customer Segmentation
+This pie chart illustrates the distribution of total customer revenue across three segments: low, medium, and high.
+
+<img width="1353" height="777" alt="image" src="https://github.com/user-attachments/assets/e302955e-e0bf-426f-834a-777c3893244e" />
+
+# 3. Churn Analysis:
+This donut chart shows the distribution of customers based on their activity within the past six months. Active customers are those who engaged during this period, while the churn segment represents those who have not been active for six months or more, as identified through churn analysis.
+
+<img width="1199" height="741" alt="Screenshot 2025-09-07 112427" src="https://github.com/user-attachments/assets/41983bcc-9889-432e-8d1f-46752938ecf4" />
+
+# 4. The first KPI cards provides information about the total revenue of $ 8.48 Million from customers.
+
+# 5. The second KPI provides insights on total customers (14K).
 
 ## 2. Australian Current and Projected Housing Needs 2022 by Local Government Area
 
