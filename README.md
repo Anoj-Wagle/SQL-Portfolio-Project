@@ -11,7 +11,7 @@ This project analyzes a comprehensive sales dataset spanning from 2015 to 2017. 
 * **Power BI** – Interactive dashboard design, visualization, and reporting.
 * **DAX (Data Analysis Expressions)** – Creating custom metrics and calculations.
 * **Power Query** – Data shaping and ETL (Extract, Transform, Load) processes.
-* 
+  
 ## Dataset Overview
 The dataset includes following details.
 - Product Sales in 2015
@@ -141,7 +141,7 @@ This donut chart shows the distribution of customers based on their activity wit
 
 # 5. The second KPI provides insights on total customers (14K).
 
-## 2. Australian Current and Projected Housing Needs 2022 by Local Government Area
+# 2. Australian Current and Projected Housing Needs 2022 by Local Government Area
 
 # Project Overview:
 This project analyzes Australian projected housing demand at the Local Government Area (LGA) level in year 2022, highlighting regions under significant pressure by quantifying the impact of unmet housing needs. It identifies the top 10 LGAs with the highest unmet demand and the top 10 with the most severe homelessness rates in each state. Furthermore, it tracks the quarterly dynamics of the rental market by measuring the movement in rental stress between **Q1** and **Q2**.
