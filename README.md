@@ -146,6 +146,8 @@ This donut chart shows the distribution of customers based on their activity wit
 ## 2. The business can analyze the number of active customers in the past six months and identify the types of customers who remain active.
 ## 3. Categorize customers based on their spending patterns, classifying them into high, medium, and low revenue segments, which also reflects their level of activity.
 
+# You can download project here: [Download Now](https://github.com/Anoj-Wagle/SQL-Portfolio-Project/tree/main/Revenue%20Insights)
+
 
 # 2. Australian Current and Projected Housing Needs 2022 by Local Government Area
 
@@ -273,7 +275,7 @@ This horizontal bar chart is designed to clearly rank the top 10 LGAs by the num
 * **Areas for Intervention** : The dashboard highlights the top areas for homelessness and unmet needs, helping organizations focus their efforts where they can have the biggest impact.
 * **Strategic Planning** : Businesses and policymakers can use this information to plan future projects and resource allocation more effectively.
 
-# You can download project here : (Download Now)[https://github.com/Anoj-Wagle/SQL-Portfolio-Project/tree/main/Housing%20Demand%20by%20LGA]
+# You can download project here : [Download Now](https://github.com/Anoj-Wagle/SQL-Portfolio-Project/tree/main/Housing%20Demand%20by%20LGA)
 
 
 
